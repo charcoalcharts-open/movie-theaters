@@ -56,7 +56,8 @@ movieId,title,runtime,releaseDate,rating
 239916,The Wedding Banquet (2025),102,2025-04-18T00:00:00,R
 233705,Abby's List: A Dogumentary (2023),  0,2023-05-01T00:00:00,Not Rated
 239019,La Grande (2025), 95,2025-05-09T00:00:00,PG
-240194,DOGMA: The Resurrection Tour, A 25th Anniversary Celebration with Kevin Smith,130,2025-04-20T00:00:00,Not Rated
+240194,DOGMA: The Resurrection Tour, A 25th Anniversary Celebration with Kevin Smith,130,2025-04-20T00:00:00
+Not Rated,,,,
   2181,Alamo: The Price of Freedom, 37,NA,Not Rated
 240521,The Kiss (2025),116,2025-05-16T00:00:00,Not Rated
 239523,On Swift Horses (2025),117,2025-04-25T00:00:00,R
@@ -154,7 +155,7 @@ NA,NA,NA,NA,NA
  71651,Judgment at Nuremberg,186,1961-12-19T00:00:00,Not Rated
  22907,Little Shop of Horrors,104,1986-12-19T00:00:00,PG13
 236289,Universal Soldier (1992),102,1992-07-10T00:00:00,R
-239657,I Know Catherine, The Log Lady (2025),120,2025-04-17T00:00:00,Not Rated
+239657,I Know Catherine, The Log Lady (2025),120,2025-04-17T00:00:00
 187530,Rogue One: A Star Wars Story,133,2016-12-16T00:00:00,PG13
  83884,Little Buddha (1993),123,1994-05-25T00:00:00,PG
 240612,Deaf President Now! (2025),100,2025-05-16T00:00:00,Not Rated
@@ -216,3 +217,49 @@ NA,NA,NA,NA,NA
  34120,After Hours, 97,NA,R
 104679,Casino,178,NA,R
  40111,Viy, 78,NA,Not Rat
+3,American Psycho (2000),103,2000-04-14T00:00:00,R
+32804,House of 1000 Corpses,88,NA,R
+2181,Alamo: The Price of Freedom,37,NA,Not Rated
+443,The City of Lost Children,111,1995-12-15T00:00:00,R
+60281,A Man and a Woman,105,NA,Not Rated
+90729,The Exorcist (1973),121,1973-12-26T00:00:00,R
+78720,Ishtar,107,NA,PG13
+1831,Killer of Sheep (1977),80,2025-11-14T00:00:00,Not Rated
+97605,Mad Max 2: The Road Warrior,95,NA,R
+895,Night of the Living Dead (1990),96,NA,R
+92318,Street Trash (1987),85,1987-06-24T00:00:00,Not Rated
+23209,The Secret of NIMH,82,1982-07-30T00:00:00,G
+720,Cecil B. Demented,88,NA,R
+21419,The Wicker Man (1974),94,2006-09-01T00:00:00,R
+40853,Carlito's Way,144,NA,R
+21183,Dog Day Afternoon,130,NA,R
+3604,Cooley High,107,NA,PG
+93985,Rad (1986),91,NA,PG
+41162,Jagadeka Veerudu Athiloka Sundari (1990),155,1990-05-09T00:00:00,Not Rated
+1833,Labyrinth (1986),101,1986-06-27T00:00:00,PG
+440,Pee Wee's Big Adventure,90,1985-07-19T00:00:00,PG
+2277,Whispers,15,NA,Not Rated
+624,Aliens,137,1986-07-18T00:00:00,R
+146,The Rocky Horror Picture Show,95,1975-09-29T00:00:00,R
+1796,The Elephant Man (1981),125,1981-02-28T00:00:00,PG
+71651,Judgment at Nuremberg,186,1961-12-19T00:00:00,Not Rated
+22907,Little Shop of Horrors,104,1986-12-19T00:00:00,PG13
+83884,Little Buddha (1993),123,1994-05-25T00:00:00,PG
+59944,Streets of Fire,98,NA,PG
+585,Legend (1985),89,1985-01-16T00:00:00,PG
+31720,Legally Blonde,96,NA,PG13
+82538,Pride and Prejudice (2005),118,2005-11-23T00:00:00,PG
+34656,Mulholland Drive,146,2001-10-08T00:00:00,R
+22908,Lost Highway (1997),135,NA,R
+93440,The Short Films of David Lynch,0,NA,Not Rated
+92686,Phenomena,110,1985-01-31T00:00:00,R
+28124,Ferris Bueller's Day Off (1986),103,1986-06-11T00:00:00,PG13
+27998,A League of Their Own,126,1992-07-01T00:00:00,PG
+19549,The Sandlot (1993),101,NA,PG
+752,Dirty Harry,102,1971-01-01T00:00:00,R
+37242,2001: A Space Odyssey,139,1968-04-02T00:00:00,G
+56573,Mystery Movie,0,NA,Not Rated
+654,Princess Mononoke (2001),133,2001-10-19T00:00:00,PG13
+20827,Andrei Rublev,165,1973-04-01T00:00:00,R
+34120,After Hours,97,NA,R
+40111,Viy,78,NA,Not Rat
