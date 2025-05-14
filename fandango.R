@@ -12,8 +12,8 @@ library(rrapply)
 library(jsonlite)
 library(caTools)
 
-
-if(!exists(date))  date <- readline("showtime date:  ") %>% gsub("\"","",.)
+{
+if(!class(date)%in%c("character","Date"))  date <- readline("showtime date:  ") %>% gsub("\"","",.)
 
 
 
@@ -58,18 +58,18 @@ fi=list.files(dir,full=T); for(k in length(fi)) read.csv(fi[k],row.names=NULL) %
 
 
 gpush=function(d,path="newfile.csv",message=NA){
-if(is.na(message)) message=paste(nrow(d),"rows")
-nx=paste(names(d),collapse=",")
-bx=apply(d, 1, paste, collapse=",")
-dx=paste(c(nx,bx),collapse="\n")
-
-tok="@CAHX-SuKmB2+3Hx7c" %>% paste0("!Z$zggs5JeI$8FS4si+rY4QEJ",.) %>% paste0("_",.) %>% paste0("p",.) %>% paste0("h",.) %>% paste0("g",.) %>% gsub("[^A-z0-9_]","",.)
-gh=paste0("https://api.github.com/repos/charcoalcharts-open/movie-theaters/contents/",path)
-sha=content(GET(gh))$sha
-content=base64encode(dx)
-body=paste0("{\"message\":\"",message,"\",\"content\":\"",content,"\",\"sha\":\"",sha,"\"}")
-p=PUT(gh,body=body,add_headers(Authorization=paste("Bearer",tok)))
-p$status_code}
+  if(is.na(message)) message=paste(nrow(d),"rows")
+  nx=paste(names(d),collapse=",")
+  bx=apply(d, 1, paste, collapse=",")
+  dx=paste(c(nx,bx),collapse="\n")
+  
+  tok="@CAHX-SuKmB2+3Hx7c" %>% paste0("!Z$zggs5JeI$8FS4si+rY4QEJ",.) %>% paste0("_",.) %>% paste0("p",.) %>% paste0("h",.) %>% paste0("g",.) %>% gsub("[^A-z0-9_]","",.)
+  gh=paste0("https://api.github.com/repos/charcoalcharts-open/movie-theaters/contents/",path)
+  sha=content(GET(gh))$sha
+  content=base64encode(dx)
+  body=paste0("{\"message\":\"",message,"\",\"content\":\"",content,"\",\"sha\":\"",sha,"\"}")
+  p=PUT(gh,body=body,add_headers(Authorization=paste("Bearer",tok)))
+  p$status_code}
 
 tx="https://raw.githubusercontent.com/charcoalcharts-open/movie-theaters/refs/heads/main/theaters.csv" %>% read.csv %>% rbind("theaters.csv") %>% .[!duplicated(.$id),] %>% .[complete.cases(.),]
 tx %>% gpush("theaters.csv")
@@ -77,6 +77,7 @@ mx=read.csv("movies.csv")
 m2="https://raw.githubusercontent.com/charcoalcharts-open/movie-theaters/refs/heads/main/movies.csv" %>% read.csv %>% rbind(mx[,1:5]) %>% .[!duplicated(.$movieId),]
 m2 %>% gpush("movies.csv")
 read.csv("showtimes.csv") %>% .[complete.cases(.),] %>% gpush(paste0("workspace","/showtimes.csv"))
+}
 
 
 
